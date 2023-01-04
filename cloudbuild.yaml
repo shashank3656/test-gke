@@ -8,4 +8,4 @@ steps:
 options:
   logging: CLOUD_LOGGING_ONLY
   workerPool:
-    'projects/friendly-art-349306/locations/asia-south1/workerPools/cicd-workerpool'
+    'projects/friendly-art-349306/locations/us-west1/workerPools/cicd-workerpool'
