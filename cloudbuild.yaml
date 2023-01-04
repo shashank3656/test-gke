@@ -1,0 +1,11 @@
+steps:
+- name: "gcr.io/cloud-builders/kubectl"
+  args: ['get', 'nodes']
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=asia-south1'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=mycluster'
+  
+options:
+  logging: CLOUD_LOGGING_ONLY
+  workerPool:
+    'projects/friendly-art-349306/locations/asia-south1/workerPools/cicd-workerpool'
